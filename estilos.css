@@ -1,0 +1,496 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: Arial, sans-serif;
+
+    background: #eaf4ff;
+
+    color: #031b4e;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+header {
+    background: #031b4e;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px 20px;
+}
+
+header h1 {
+    margin: 0;
+
+    font-size: 32px;
+}
+
+header p {
+    margin: 5px 0 0;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   MENÚ
+========================= */
+
+nav {
+    background: #0755b5 !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    margin-left: 10px;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+main {
+    flex: 1;
+}
+
+
+/* =========================
+   INICIO
+========================= */
+
+.inicio {
+    padding: 70px 20px;
+}
+
+.presentacion {
+    padding: 20px;
+}
+
+.etiqueta {
+    color: #168cff;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.presentacion h2 {
+    color: #031b4e;
+
+    font-size: 42px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.presentacion h3 {
+    color: #0755b5;
+
+    font-size: 24px;
+
+    margin-bottom: 20px;
+}
+
+.presentacion p:not(.etiqueta) {
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.boton-principal {
+    background: #0755b5;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+}
+
+.boton-principal:hover {
+    background: #031b4e;
+}
+
+
+/* =========================
+   FOTO INICIO
+========================= */
+
+.foto-inicio img {
+    width: 260px;
+
+    height: 260px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 7px solid #168cff;
+
+    box-shadow: 0 10px 30px rgba(3, 27, 78, 0.25);
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.informacion {
+    padding: 20px 20px 60px;
+}
+
+.info-card {
+    background: white;
+
+    text-align: center;
+
+    padding: 25px 15px;
+
+    min-height: 180px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(3, 27, 78, 0.12);
+
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.icono {
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+.info-card h4 {
+    color: #0755b5;
+
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    margin: 0;
+
+    color: #031b4e;
+}
+
+
+/* =========================
+   PERFIL
+========================= */
+
+.perfil-simple {
+    padding: 70px 20px;
+}
+
+.perfil-texto {
+    padding: 20px;
+}
+
+.perfil-texto h2 {
+    color: #0755b5;
+
+    font-size: 30px;
+
+    border-left: 6px solid #168cff;
+
+    padding-left: 15px;
+
+    margin-bottom: 30px;
+}
+
+.perfil-texto p {
+    line-height: 1.7;
+
+    font-size: 17px;
+
+    margin-bottom: 20px;
+}
+
+.perfil-imagen img {
+    width: 350px;
+
+    max-width: 100%;
+
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 15px;
+}
+
+
+/* =========================
+   FORMACIÓN
+========================= */
+
+.formacion-simple {
+    padding: 70px 20px;
+}
+
+.formacion-simple h2 {
+    color: #0755b5;
+
+    font-size: 30px;
+
+    border-left: 6px solid #168cff;
+
+    padding-left: 15px;
+
+    margin-bottom: 45px;
+}
+
+.formacion-imagen img {
+    width: 100%;
+
+    max-width: 400px;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(3, 27, 78, 0.20);
+}
+
+.estudios {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(3, 27, 78, 0.12);
+}
+
+.estudios h3 {
+    color: #0755b5;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   HABILIDADES
+========================= */
+
+.habilidades-simple {
+    padding: 70px 20px;
+}
+
+.habilidades-imagen img {
+    width: 100%;
+
+    max-width: 400px;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(3, 27, 78, 0.20);
+}
+
+.habilidades-texto {
+    padding: 20px;
+}
+
+.habilidades-texto h2 {
+    color: #0755b5;
+
+    font-size: 30px;
+
+    border-left: 6px solid #168cff;
+
+    padding-left: 15px;
+
+    margin-bottom: 25px;
+}
+
+.habilidades-texto p {
+    line-height: 1.7;
+}
+
+.habilidades-texto li {
+    margin-bottom: 12px;
+
+    color: #031b4e;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto-simple {
+    padding: 60px 20px;
+}
+
+.contacto-simple h2 {
+    color: #0755b5;
+
+    font-size: 30px;
+
+    border-left: 6px solid #168cff;
+
+    padding-left: 15px;
+
+    margin-bottom: 40px;
+}
+
+.datos-contacto p {
+    color: #031b4e;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    margin-bottom: 28px;
+}
+
+.datos-contacto strong {
+    color: #0755b5;
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.formulario-contacto {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(3, 27, 78, 0.12);
+}
+
+.formulario-contacto h3 {
+    color: #0755b5;
+
+    margin-bottom: 25px;
+}
+
+.form-control {
+    border: 1px solid #b8d4f0;
+
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: #168cff;
+
+    box-shadow: 0 0 0 0.2rem rgba(22, 140, 255, 0.15);
+}
+
+
+/* =========================
+   MENSAJES DE VALIDACIÓN
+========================= */
+
+.mensaje-error {
+    color: #dc3545;
+
+    font-size: 14px;
+
+    margin-top: 5px;
+}
+
+.mensaje-exito {
+    color: #198754;
+
+    font-weight: bold;
+
+    margin-top: 20px;
+}
+
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
+
+footer {
+    background: #031b4e;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================
+   ADAPTACIÓN A CELULARES
+========================= */
+
+@media (max-width: 768px) {
+
+    .presentacion h2 {
+        font-size: 32px;
+    }
+
+    .presentacion h3 {
+        font-size: 20px;
+    }
+
+    .foto-inicio img {
+        width: 220px;
+
+        height: 220px;
+
+        margin-top: 30px;
+    }
+
+    .perfil-imagen img {
+        width: 300px;
+
+        margin-top: 30px;
+    }
+
+}
